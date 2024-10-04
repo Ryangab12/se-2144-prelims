@@ -1,0 +1,73 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+    background-image: url("Lightning.png");
+  }
+
+  @keyframes rgb-flash {
+    0% { background-color: red; }
+    25% { background-color: yellow; }
+    50% { background-color: lime; }
+    75% { background-color: cyan; }
+    100% { background-color: purple; }
+  }
+  
+  .calculator {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  .screen {
+    background-color: #222;
+    color: white;
+    font-size: 2rem;
+    text-align: right;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .keypad {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+  }
+  
+  button {
+    font-size: 1.5rem;
+    padding: 20px;
+    background-color: #555;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #777;
+  }
+  
+  button.operator {
+    background-color: #ff5722;
+  }
+  
+  button#equals {
+    background-color: #4caf50;
+  }
+  
+  button#hello, button#bye {
+    margin-top: 20px;
+    background-color: #2196f3;
+  }
+
+  button#number0 {
+    grid-column: span 2;
+  }
